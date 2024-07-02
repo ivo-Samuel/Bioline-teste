@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const tituloLogin = document.querySelector('.titulo-login')
     const mensagens = document.querySelector('.mensagens')
 
-<<<<<<< HEAD
 //Mensagens
     const logadoSucesso = ()=>{
         mensagens.innerHTML = 'Usuário logado com sucesso.'
@@ -63,7 +62,7 @@ if(formLogin) {
     onAuthStateChanged(auth, (user)=>{
         if(user){
             const uid = user.uid
-=======
+
     // mensagens
     const logadoSucesso = () =>{
         mensagens.innerHTML = 'Usuário logado com sucesso.'
@@ -121,27 +120,23 @@ if(formLogin) {
         if(user){
             const uid = user.uid
 
->>>>>>> 3722622a3af41d6ce7b1ed341faaffb75a3cf8cf
             if(linkSair) linkSair.classList.remove('hide')
             if(formLogin) formLogin.classList.add('hide')
             if(formPost) formPost.classList.remove('hide')
             if(tituloLogin) tituloLogin.innerHTML = 'ACESSO AO ADMINISTRADOR LIBERADO'
         }else{
             if(linkSair) linkSair.classList.add('hide')
-<<<<<<< HEAD
+
             if(formLogin)formLogin.classList.remove('hide')
             if(formPost) formPost.classList.add('hide')
             if(tituloLogin) tituloLogin.innerHTML = 'FAÇA O LOGIN COMO ADMINISTRADOR'
         }
     })
 
-=======
             if(formLogin) formLogin.classList.remove('hide')
             if(formPost) formPost.classList.add('hide')
             if(tituloLogin) tituloLogin.innerHTML = 'FAÇA O LOGIN COMO ADMINISTRADOR!'
         }
     })
 
-
->>>>>>> 3722622a3af41d6ce7b1ed341faaffb75a3cf8cf
 })
